@@ -15,6 +15,10 @@
       * {
         color: white;
       }
+
+      marquee {
+        float: right;
+      }
     </style>
     <blink>
       Feliz Halloweeen
@@ -24,43 +28,46 @@
       Esse site é feito em homenagem a este feriado incrivel
     </font>
 
-    <marquee direction="down" width="250" height="200" behavior="alternate" style="border:solid">
+    <marquee 
+    
+    
+    
+    direction="down" width="250" height="200" behavior="alternate" style="border:solid">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus debitis suscipit, possimus maxime tempora at expedita, ut obcaecati aliquam sapiente ab, dolore praesentium iusto rerum perspiciatis distinctio eius vel minima reiciendis tempore nihil cumque nobis id libero? Autem, veniam consequatur exercitationem molestias, a, ex nihil rerum libero tempore non minus.
     </marquee>
 
     <div>
-      <input style="color: white" type="text" placeholder="seu nome">
-      <input style="color: white" type="text" placeholder="seu email">
-      <input style="color: white" type="text" placeholder="seu lance">
-      <input style="color: white" type="text" placeholder="seu role">
-    </div>
+      <input style="color: whit" type="text" placeholder="seu nome">
+  <input style="color: white" type="text" placeholder="seu email">
+    <input style="color: white" type="text" placeholder="seu lance">
+<input style="color: white" type="text" placeholder="seu role">
+.
 
     <table>
       <li>Comprar abobora</li>
       <li>Vender abobora</li>
       <li>Fazer abobora</li>
-      <li>Abo</li>
+      <li>Abo
       <li>bora</li>
     </table>
+<img src="./trakto-editor-inserir-gifs-animados.gif" alt="">
 
-    <img src="./trakto-editor-inserir-gifs-animados.gif" alt="">
+<script>	
+  const img = document.createElement('IMG')
+            img.src = 'ursinho.jpg'
+            img.style = 'position: fixed; inset: 0; width: 100%; height: 100%'
 
-    <script>	
-      const img = document.createElement('IMG')
-      img.src = 'ursinho.jpg'
-      img.style = 'position: fixed; inset: 0; width: 100%; height: 100%'
-
-      const scream = new Audio('role.mp3');
-
-      setInterval(() => {
+  const scream = new Audio('role.mp3');
+setInterval(() => {
         const audio = document.querySelector('audio');
 
-        if (!audio.paused) {
-          scream.play();
-          document.querySelector('body').append(img)
-        }
-      }, 10000)
+              if (!audio.paused) {
+                scream.play();
+                document.querySelector('body').append(img)
+              }
+  }, 10000)
+</script>
 
-    </script>
+<object data="giphy.gif" width="300" height="200"></object>
   </body>
 </html><!--isso é o fim do html-->
